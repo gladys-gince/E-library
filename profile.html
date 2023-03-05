@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+  <nav id="navbar">
+    <div id="logo">
+      <img src="./Web-images/logo.png" alt="Library_logo" height="90" width="110">
+    </div>
+    <ul>
+        <li class="item"><a href="home.html">Home</a></li>
+        <li class="item"><a href="about.html">About Us</a></li>
+        <li class="item"><a href="contact.html">Contact Us</a></li>
+        <li style="float:right"><a class="active" href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <main id="profile-main">
+
+      
+      <div class="form">
+          <img src="./Web-images/Neutral.jpeg" id="profileImg" alt="">
+          <div id="name-inp">
+              <label for="name" class="block">Name :</label>
+        <input type="text" class="inputt" id="name">
+    </div>
+    <div id="age-inp">
+        <label for="age" class="block">Age :</label>
+        <input type="text" class="inputt" id="age">
+    </div>
+    <div id="college-inp">
+        <label for="college" class="block">College :</label>
+        <input type="text" class="inputt" id="college">
+    </div>
+    <div id="city-inp">
+        <label for="city" class="block">City :</label>
+        <input type="text" class="inputt" id="city">
+    </div>
+    <div id="email-inp">
+        <label for="city" class="block">Email :</label>
+        <input type="text" class="inputt" id="city">
+    </div>
+    <div id="gender">
+        <p>Gender :</p>
+        <input type="radio" name="gender" class="genderbtn" value="Male"> <label for="gender">Male</label>
+        <input type="radio" name="gender" class="genderbtn" value="Female"> <label for="gender">Female</label>
+    </div>
+</div>
+</main>
+<footer style="display: inline-block; text-align: center; background-color: #28282B; width: 100%;">
+    <img src="./Web-images/logo.png" alt="" style="height: 100px;">
+      <div class="info" style="position: center; color: white;">
+          <p>Address: Fr. Agnel Ashram, Bandstand Promenade, Mount Mary, Bandra West, Mumbai, Maharashtra 400050</p>
+          <p>Team Name: Nerds</p>
+          <p>Email: crce.9409.aids@gmail.com</p>
+          <p>Instagram: <a href="https://www.instagram.com/gladys._.gince/">Gladys Gince</a> <a href="https://www.instagram.com/pratham.kambli/">Pratham Kambli</a> <a href="https://www.instagram.com/pansare.mohit/">Mohit Pansare</a> <a href="https://www.instagram.com/the_holmes_girl/">Rhea Bhalekar</a></p>
+      </div>
+  </footer>
+</body>
+<script>
+
+    const gender = document.getElementsByClassName('genderbtn')
+    const img = document.getElementById('profileImg')
+    for(let i=0;i<2;i++){
+        gender[i].addEventListener('click',(e)=>{
+            const gen = e.target.value
+            console.log(gen)
+            addPhoto(gen)
+        })
+    }
+    
+    function addPhoto(gen){
+        if (gen == 'Female'){
+            img.src = './Web-images/FemaleIcon.png'
+        }
+        else if(gen == 'Male'){
+            img.src = './Web-images/MaleIcon.png'
+        }
+    }
+</script>
+</html>

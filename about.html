@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+  .about-img{
+    height: 300px;
+    width: 300px;
+  }
+  .grid-containerabout2{
+    margin-top: 50px;
+  }
+  .grid-item,.grid-itemabout{
+    height: 350px;
+    width: 300px;
+  }
+
+  .user-info{
+    display: inline-block;
+    position: relative;
+    bottom: 62px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 50px;
+    display: none;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+  }
+  .linkedIN{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .insta{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+  .overlay1,.overlay2{
+    position: relative;
+    /* bottom: 50px; */
+  }
+</style>
+<body>
+
+<!-- <style>
+
+  .grid-container
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10%;
+  }
+
+  .overlay1
+  {
+    margin-left: 1.3%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 23.7%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .overlay3
+  {
+    margin-left: 1.3%;
+    margin-top: 120%;
+    position: absolute;
+    bottom: -80%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 23.8%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .overlay2
+  {
+    margin-left: 1.3%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 23.8%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .overlay4
+  {
+    margin-left: 1.3%;
+    position: absolute;
+    bottom: -80%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 23.8%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .About1:hover .overlay1
+  {
+    opacity: 1;
+  }
+  .About3:hover .overlay3
+  {
+    opacity: 1;
+  }
+  .About2:hover .overlay2
+  {
+    opacity: 1;
+  }
+  .About4:hover .overlay4
+  {
+    opacity: 1;
+  }
+
+  .info a
+  {
+    color: white;
+  }
+  .info a:hover
+  {
+    color: orange;
+  }
+</style> -->
+
+<!-- NAVIGATION BAR -->
+<nav id="navbar">
+  <div id="logo">
+    <img src="./Web-images/logo.png" alt="Library_logo" height="90" width="110">
+  </div>
+  <ul>
+    <li class="item"><a href="home.html">Home</a></li>
+    <li class="item"><a href="about.html">About Us</a></li>
+    <li class="item"><a href="contact.html">Contact Us</a></li>
+    <li style="float:right"><a class="active" href="profile.html">Profile</a></li>
+  </ul>
+</nav><br>
+    <!-- <div class="grid-container">
+      <div class="grid-item" style="height: 400px;">
+        <div class="About1">
+          <img src="GladysCultural.jpeg" alt="" style="height: 400px; margin-top: 75px; margin-right: 200px; border: #28282B; border-width: 20px; border-style: ridge;">
+          <div class="overlay1">Gladys Gince</div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="About2">
+          <img src="PrathamCultural.jpeg" alt="" style="height: 400px; margin-top: 75px; border: #28282B; border-width: 20px; border-style:ridge;" ><br><br><br><br>
+          <div class="overlay2">Pratham Kambli</div>
+        </div>
+      </div><br>
+      <div class="grid-item">
+        <div class="About3">
+          <img src="MohitYellow.jpeg" alt="" style="height: 400px; margin-top: 75px; margin-right: 200px; border: #28282B; border-width: 20px; border-style: ridge;">
+          <div class="overlay3">Mohit Pansare</div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="About4">
+          <img src="RheaBhalekar.jpeg" alt="" style="height: 400px; margin-top: 75px; border: #28282B; border-width: 20px; border-style: ridge;" ><br><br><br><br>
+          <div class="overlay4">Rhea Bhalekar</div>
+        </div>
+      </div>
+    </div> -->
+    <div class="grid-containerabout">
+      <div class="grid-item">
+        <div class="About1">
+          <img src="./Web-images/GladysCultural.jpg" class="about-img" alt="">
+          <span class="user-info"><a href="https://www.instagram.com/gladys._.gince/"><i class='bx bxl-instagram-alt insta' style='color:#000'></i></a> <a href=""><i class='bx bxl-linkedin-square linkedIN' style='color:#000'></i></a></span>
+          <div class="overlay1">Gladys Gince</div>
+        </div>
+      </div>
+      <div class="grid-itemabout">
+        <div class="About2">
+          <img src="./Web-images/PrathamCultural.jpg" class="about-img" alt="">
+          <span class="user-info"><a href="https://www.instagram.com/pratham.kambli/"><i class='bx bxl-instagram-alt insta' style='color:#000'></i></a> <a href=""><i class='bx bxl-linkedin-square linkedIN' style='color:#000'></i></a></span>
+          <div class="overlay2">Pratham Kambli</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-containerabout2">
+      <div class="grid-item">
+        <div class="About1">
+          <img src="./Web-images/MohitYellow.jpg" class="about-img" alt="">
+          <span class="user-info"><a href="https://www.instagram.com/pansare.mohit/"><i class='bx bxl-instagram-alt insta' style='color:#000'></i></a> <a href=""><i class='bx bxl-linkedin-square linkedIN' style='color:#000'></i></a></span>
+          <div class="overlay1">Mohit Pansare</div>
+        </div>
+      </div>
+      <div class="grid-itemabout">
+        <div class="About2">
+          <img src="./Web-images/RheaBhalekar.jpg" class="about-img" alt="">
+          <span class="user-info"><a href="https://www.instagram.com/the_holmes_girl/"><i class='bx bxl-instagram-alt insta' style='color:#000'></i></a> <a href=""><i class='bx bxl-linkedin-square linkedIN' style='color:#000'></i></a></span>
+          <div class="overlay2">Rhea Bhalekar</div>
+        </div>
+      </div>
+    </div><br>
+
+
+
+
+
+
+
+    <!-- <div class="Photo" style="display: flex">
+      <div class="About1">
+        <img src="GladysCultural.jpeg" alt="" style="height: 400px; padding-left: 50%; margin-top: 75px; margin-right: 400px;">
+        <div class="overlay1">Gladys Gince</div>
+      </div>
+      <div class="About2">
+        <img src="PrathamCultural.jpeg" alt="" style="height: 500px; padding-left: 150%; margin-top: 75px;" ><br><br><br><br>
+        <div class="overlay2">Pratham Kambli</div>
+      </div>
+    </div>
+    <div class="Photo" style="display: flex">
+      <div class="About3">
+        <img src="MohitYellow.jpeg" alt="" style="height: 500px; padding-left: 50%; margin-top: 75px; margin-right: 400px;">
+        <div class="overlay3">Mohit Pansare</div>
+      </div>
+      <div class="About4">
+        <img src="RheaBhalekar.jpeg" alt="" style="height: 500px; padding-left: 150%; margin-top: 75px;" ><br><br><br><br>
+        <div class="overlay4">Rhea Bhalekar</div>
+      </div>
+    </div> -->
+
+    <footer style="display: inline-block; text-align: center; background-color: #28282B; width: 100%;">
+      <img src="./Web-images/logo.png" alt="" style="height: 100px;">
+        <div class="info" style="position: center; color: white;">
+            <p>Address: Fr. Agnel Ashram, Bandstand Promenade, Mount Mary, Bandra West, Mumbai, Maharashtra 400050</p>
+            <p>Team Name: Nerds</p>
+            <p>Email: crce.9409.aids@gmail.com</p>
+            <p>Instagram: <a href="https://www.instagram.com/gladys._.gince/">Gladys Gince</a> <a href="https://www.instagram.com/pratham.kambli/">Pratham Kambli</a> <a href="https://www.instagram.com/pansare.mohit/">Mohit Pansare</a> <a href="https://www.instagram.com/the_holmes_girl/">Rhea Bhalekar</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+  // .grid-item,.grid-itemabout
+  const grid1 = document.getElementsByClassName('grid-item');
+  const grid2 = document.getElementsByClassName('grid-itemabout')
+
+
+  for (let i = 0; i < grid1.length;i++){
+    grid1[i].addEventListener('mouseover',(e)=>{
+      e.target.children[0].children[1].style.display = 'block';
+      e.target.children[0].children[2].style.bottom = '50px';
+    })
+    
+    grid1[i].addEventListener('mouseleave',(e)=>{
+      e.target.children[0].children[1].style.display = 'none';
+      e.target.children[0].children[2].style.bottom = '0';
+    })
+    
+    grid2[i].addEventListener('mouseover',(e)=>{
+      e.target.children[0].children[1].style.display = 'block';
+      e.target.children[0].children[2].style.bottom = '50px';
+    })
+    
+    grid2[i].addEventListener('mouseleave',(e)=>{
+      e.target.children[0].children[1].style.display = 'none';
+      e.target.children[0].children[2].style.bottom = '0';
+    })
+
+  }
+
+
+  </script>
+</html>
